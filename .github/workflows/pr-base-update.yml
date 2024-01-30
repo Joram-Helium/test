@@ -17,8 +17,11 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Install @octokit/rest
+      run: npm install @octokit/rest
+
     - name: Update Base Branch of PRs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DEFAULT_BRANCH: 'main' # Your default branch
+        DEFAULT_BRANCH: 'dev'
       run: node update-pr-base.js
