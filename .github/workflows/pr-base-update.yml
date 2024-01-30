@@ -23,5 +23,5 @@ jobs:
     - name: Update Base Branch of PRs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DEFAULT_BRANCH: 'dev'
+        DEFAULT_BRANCH: 'main'
       run: node update-pr-base.js
