@@ -18,7 +18,7 @@ jobs:
         node-version: '16'
 
     - name: Install @octokit/rest
-      run: npm install @octokit/rest
+      run: npm install @octokit/rest node-fetch
 
     - name: Update Base Branch of PRs
       env:
