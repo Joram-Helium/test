@@ -24,4 +24,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEFAULT_BRANCH: 'main'
-      run: node update-pr-base.js
+      run: node .github/workflows/update-pr-base.js
